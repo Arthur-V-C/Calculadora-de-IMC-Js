@@ -4,21 +4,33 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!-- Título e ícone da guia da página -->
     <title>Calculadora de IMC</title>
     <link rel="icon" href="/img/calculadora.png">
+
+    <!-- Fontes -->
     <link rel='preconnect' href='https://fonts.gstatic.com'>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src='script.js'></script>
-    <link href='/Bootstrap/css/bootstrap.min.css' rel='stylesheet'> 
-    <script src='/Bootstrap/js/bootstrap.min.js'></script>
-    <link rel='stylesheet' href='/style.css'>
-    <link rel='stylesheet' href='/reponsive.css'>
+    
+    <!-- Bootstrap -->
+    <link href='/bootstrap/css/bootstrap.min.css' rel='stylesheet'> 
+    <script src='/bootstrap/js/bootstrap.min.js'></script>
+
+    <!-- Arquivo JavaScript -->
+    <script src='/js/script.js'></script>
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Arquivos Css -->
+    <link rel='stylesheet' href='/css/style.css'>
+    <link rel='stylesheet' href='/css/reponsive.css'>
     
 </head>
 <body>
     <div class='container-fluid'>
         <div class='row'>
             <div class='col-sm-6'>
+            <!-- Autor e o Título da página -->
                 <div class="informacoes">
                     <div class="autor">
                         Arthur Vaz
@@ -29,33 +41,39 @@
                 </div>
             </div>
             <div class='col-sm-4'>
+                <!-- Calculadora -->
                 <div class='contorno'>
                     <div class='calculadora'>
                         <div class='titulo'>Calculadora - IMC</div>
                         <div class='hr'></div>
-
                         <div class='caixa'>
                             <div class='dados'>Nome: </div>
-                            <input type='text' id='nome'/>
+                            <div class="resposta">
+                                <input type='text' id='nome'/>
+                                <div class='erro1'>Preencha todos os campos</div>
+                            </div>  
                         </div>
 
                         <div class='caixa'>
                             <div class='dados'>Peso: </div>
-                            <input type='number' id='peso'/>
+                            <div class="resposta">
+                                <input type='number' id='peso'/>
+                                <div class='erro2'>Preencha todos os campos</div>
+                            </div>  
                         </div>
 
                         <div class='caixa'>
-                            <div class='dados'>Altura: </div>
-                            <input type='number' id='altura'/>
+                            <div class='dados'>Altura </div>
+                            <div class="resposta">
+                                <input type='number' id='altura'/>
+                                <div class='erro3'>Preencha todos os campos</div>
+                            </div>  
                         </div>
-
-                        <button onclick='t()' id='calcular'>Calcular</button>
-                        
+                        <button onclick='calcular()' id='calcular'>Calcular</button>
                         <textarea id='resultado' disabled></textarea>
                 </div>
             </div>
         </div>
     </div>
-    
 </body>
 </html>

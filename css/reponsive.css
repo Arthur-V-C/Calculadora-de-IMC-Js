@@ -1,13 +1,13 @@
-@media (min-width: 1500px){
+@media (min-width: 1900px){
     .contorno{
         width: 100%;
         height: 120%;
         margin-top: 10%;
         padding: 10%;
     }
-}
-
-@media (min-width: 1500px){
+    .wrong{
+        font-size: 17.4px !important;
+    }
     .calculadora textarea{
         font-size: 22px;
     }
@@ -21,11 +21,26 @@
         margin-top: -15px;
     }
 }
+
+
+@media (max-width: 1400px){
+     .calculadora .wrong{
+         font-size: 18px;
+     }
+}
+
+
+
 @media (max-height: 640px){
         .contorno{
             margin-top: 5%;
         }
 }
+
+
+
+
+
 @media (max-height: 615px){
     .contorno{
         height: 500px;
@@ -39,6 +54,11 @@
         margin-top: 1%;
     }
 }
+
+
+
+
+
 @media (max-height: 550px){
     .contorno{
         height: 450px;
@@ -52,11 +72,21 @@
         font-size: 14.5px;
     }
 }
+
+
+
+
+
 @media(max-width: 1290px){
     .calculadora textarea{
         font-size: 13px;
     }
 }
+
+
+
+
+
 @media(max-width: 1220px){
     html{
         overflow-y:hidden;
@@ -141,6 +171,11 @@
     }
     
 }
+
+
+
+
+
 @media(max-width: 1092px){
     .informacoes .titulo{
         font-size: 50px;
@@ -161,6 +196,11 @@
         margin-top: -33.5%;
     }
 }
+
+
+
+
+
 @media(max-width: 1020px){
     .calculadora input{
         max-width: 180px;   
@@ -171,7 +211,15 @@
     .calculadora button{
         margin-top: -36%;
     }
+    .calculadora .erro1, .erro2, .erro3{
+        font-size: 12px;
+    }
 }
+
+
+
+
+
 @media(max-width: 950px){
     .calculadora input{
         max-width: 180px;   
@@ -186,35 +234,49 @@
         margin-bottom: 10%;
     }
 }
+
+
+
+
+
 @media(max-width: 400px){
+    body{
+        background: linear-gradient(to bottom,  var(--amarelo) 40% , black 40% 10%);
+    }
     .informacoes{
         width: 100%;
         height: 100px;
+        padding: 0;
         margin-top: 2%;
         padding-top: 2%;
         display: inline-flex;
     }
     .informacoes .autor{
-        width: 100px;
+        /* width: 100px;
         font-size: 35px;
         text-align:center;
         padding: 10px 15px 20px 15px;
         box-sizing: content-box;
         border-radius: 20px;
         margin-left: 150px;
-        border: 2px solid #000;
+        border: 2px solid #000; */
+        display: none;
     }
     .informacoes .titulo{
-        font-size: 40px;
-        width: 50px;
-        margin-left: -290px;
-        line-height: 60px
+        font-size: 29px;
+        width: 100%;
+        margin: 0;
+        display: inline-flex;
+        /* margin-left: -290px; */
+        /* line-height: 60px */
     }
     .contorno{
-        width: 300px;
-        margin-left: 20px;
+        width: 90%;
+        height: 70%;
+        margin-left: 9%;
         padding: 20px;
-        margin-bottom: 100px !important;
+        margin-top: 0;
+        margin-bottom: 100% !important;
     }
     .calculadora{
         box-shadow: none;
@@ -232,7 +294,7 @@
         width: 100%;
         height: 14%;
         margin-top: 0;
-        margin-bottom: 5%;
+        margin-bottom: 7%;
         padding: 3% 10% 4% 5%;
         box-sizing: border-box;
         border-radius: 10px;
@@ -243,17 +305,21 @@
         font-size: 20px;
         font-weight: 400;
         width: 30%;
-        margin-top: -2px;
+        margin-top: 6px;
     }
     .calculadora input{
-        width: 70%;
-        height: 125%;
+        width: 90%;
+        height: 100%;
         margin-top: -3%;
         margin-left: 15%;
         max-width: 110px;
         font-size: 20px;
         box-sizing: border-box;
         padding: 0 5px 0 10px;
+    }
+    .calculadora .wrong{
+        font-size: 10px;
+        width: 100%;
     }
     .calculadora button{
         height: 10%;
@@ -274,12 +340,3 @@
     }
 
 }
-/* Calculadora
-.contorno{
-    width: 100%;
-    height: 570px;
-    background: #fff;
-    border-radius: 5px;
-    margin-top: 10%;
-    padding: 10%;
-} */

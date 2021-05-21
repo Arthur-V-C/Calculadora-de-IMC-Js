@@ -1,6 +1,4 @@
 /*  RESET  */
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,34 +18,46 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
 }
+
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
+
 ol, ul {
     list-style: none;
 }
+
+
 blockquote, q {
     quotes: none;
 }
+
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
 
+
 :root{
     --amarelo:rgb(255, 222, 38);
 }
+
 
 body{
     background: linear-gradient(to right,  var(--amarelo) 65% , black 65% 100%);
     color: #000;
 }
 
+
 .row{
     width: 100%;
 }
+
 
 .informacoes .autor{
     font-size: 40px;
@@ -61,6 +71,8 @@ body{
     margin-top: 10%;
     margin-left: 15%;
 }
+
+
 .informacoes .titulo{
     font-size: 100px;
     font-family: 'Raleway', sans-serif;
@@ -70,15 +82,20 @@ body{
     margin-top: 10%;
 }
 
+
+
 /*Calculadora*/
 .contorno{
     width: 100%;
-    height: 570px;
+    height: 120%;
+    padding: 10%;
     background: #fff;
     border-radius: 5px;
-    margin-top: 10%;
+    margin-top: 7.5%;
     padding: 10%;
 }
+
+
 .calculadora{
     width: 100%;
     height: 100%;
@@ -87,8 +104,10 @@ body{
     box-shadow: 0 0 12px 3px rgb(109, 109, 109);
     padding: 5%;
     padding-top: 3%;
-
+    padding-bottom: 0;
 }
+
+
 .calculadora .titulo{
     width: 100%;
     height: 9%;
@@ -96,36 +115,43 @@ body{
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
+
+
 .calculadora .hr{
-    width: 112%;
+    width: 111.467%;
     height: 1%;
-    margin-left: -6%;
+    margin-left: -5.78%;
     margin-top: 2%;
     background: #000;
 }
 
+
 .calculadora .caixa{
     width: 100%;
     height: 14%;
-    margin-top: 5%;
+    margin-top: 6%;
     padding: 3% 10% 4% 5%;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
 }
 
+
 .calculadora .dados{
     font-size: 25px;
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     width: 30%;
+    margin-top: 3%;
+    padding-bottom: 3%;
 }
+
 .calculadora input{
-    width: 70%;
-    height: 125%;
+    width: 100%;
+    height: 120%;
     background-color: #fff;
     border-radius: 5px;
-    margin-top: -3%;
+    margin-top: -15px;
     margin-left: 5%;
     border: 0;
     font-family: 'Raleway', sans-serif;
@@ -136,6 +162,43 @@ font-family: 'Raleway', sans-serif;
 .calculadora input:focus{
     outline: 0;
 }
+
+.calculadora .erro1{
+    width: 90%;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4%;
+    font-weight: 600;
+    margin-left: 5%;
+    display: none;
+    color: #ff0000;
+}
+
+.calculadora .erro2{
+    width: 90%;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4%;
+    font-weight: 600;
+    margin-left: 5%;
+    display: none;
+    color: #ff0000;
+}
+
+.calculadora .erro3{
+    width: 90%;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4%;
+    font-weight: 600;
+    margin-left: 5%;
+    display: none;
+    color: #ff0000;
+}
+ul li{
+    list-style-type: disc; 
+}
+
 .calculadora button{
     height: 10%;
     width: 90%;
@@ -149,30 +212,33 @@ font-family: 'Raleway', sans-serif;
     font-size: 25px;
     border: 2px solid #000;
 }
-button:hover{
+.calculadora button:hover{
     background-color: var(--amarelo);
     color: #000;
     border: 2px solid #000;
 
 }
-button:focus{
+.calculadora button:focus{
     outline: 0;
 }
-textarea{
-    height: 22%;
+
+
+
+.calculadora textarea{
+    height: 15%;
     width: 90%;
     background-color: #000;
     margin-top: 3%;
     margin-left: 5%;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     border-radius: 5px;
     border: 0;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     padding: 10px 5px 5px 10px;
 }
-textarea:focus{
+.calculadora textarea:focus{
     outline:0;
 }
 input::-webkit-outer-spin-button,
