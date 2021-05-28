@@ -94,7 +94,10 @@
     overflow-x: hidden; 
     transition: 0.5s; 
     font-family: 'Raleway', sans-serif;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
   }
   .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -102,14 +105,15 @@
     font-size: 150%;
     margin-top: 5%;
     color: #fff;
-    display: block;
+    display: flex;
     transition: 0.3s;
+    width: 40%;
     background-color: rgba(127, 255, 212, 0);
     margin-right: 5% !important;
   }
   .camada{
-    width: 60px !important;
-    height: 20px !important;
+    width: 60px ;
+    height: 12px;
     border-radius: 10px;
     border: black 2px solid !important;
     margin-top: 8% !important;
