@@ -24,56 +24,83 @@
     <!-- Arquivos Css -->
     <link rel='stylesheet' href='/css/style.css'>
     <link rel='stylesheet' href='/css/reponsive.css'>
-    
+
+    <!-- Arquivos do Menu Lateral -->
+    <link rel='stylesheet' href='/css/menu_lateral.css'>
+    <script src='/js/menu_lateral.js'></script>
+
+
 </head>
 <body>
     <div class='container-fluid'>
-        <div class='row'>
-            <div class='col-sm-6'>
-            <!-- Autor e o Título da página -->
-                <div class="informacoes">
-                    <div class="autor">
-                        Arthur Vaz
+        <div id="mySidenav" class="sidenav">
+            <li href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</li>
+            <a href="#">Link 1</a>            
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+
+          
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <div id="main">
+            <div class='row'>
+                <div class='col-sm-6'>
+                <!-- Autor e o Título da página -->
+                    <div class="informacoes">
+                        <span onclick="openNav()">
+                            <div class="hamburguer">
+                                <div class="camada"></div>
+                                <div class="camada"></div>
+                                <div class="camada"></div>
+                            </div>
+                        </span>
+                        <div class="autor">
+                            Arthur Vaz
+                        </div>
+                        <div class="titulo">
+                            IMC com JavaScript
+                        </div>
                     </div>
-                    <div class="titulo">
-                        IMC com JavaScript
+                </div>
+                <div class='col-sm-4'>
+                    <!-- Calculadora -->
+                    <div class='contorno'>
+                        <div class='calculadora'>
+                            <div class='titulo'>Calculadora - IMC</div>
+                            <div class='hr'></div>
+                            <div class='caixa'>
+                                <div class='dados'>Nome: </div>
+                                <div class="resposta">
+                                    <input type='text' id='nome'/>
+                                    <div class='erro1'>Preencha todos os campos</div>
+                                </div>  
+                            </div>
+    
+                            <div class='caixa'>
+                                <div class='dados'>Peso: </div>
+                                <div class="resposta">
+                                    <input type='number' id='peso'/>
+                                    <div class='erro2'>Preencha todos os campos</div>
+                                </div>  
+                            </div>
+    
+                            <div class='caixa'>
+                                <div class='dados'>Altura </div>
+                                <div class="resposta">
+                                    <input type='number' id='altura'/>
+                                    <div class='erro3'>Preencha todos os campos</div>
+                                </div>  
+                            </div>
+                            <button onclick='calcular()' id='calcular'>Calcular</button>
+                            <textarea id='resultado' disabled></textarea>
                     </div>
                 </div>
             </div>
-            <div class='col-sm-4'>
-                <!-- Calculadora -->
-                <div class='contorno'>
-                    <div class='calculadora'>
-                        <div class='titulo'>Calculadora - IMC</div>
-                        <div class='hr'></div>
-                        <div class='caixa'>
-                            <div class='dados'>Nome: </div>
-                            <div class="resposta">
-                                <input type='text' id='nome'/>
-                                <div class='erro1'>Preencha todos os campos</div>
-                            </div>  
-                        </div>
-
-                        <div class='caixa'>
-                            <div class='dados'>Peso: </div>
-                            <div class="resposta">
-                                <input type='number' id='peso'/>
-                                <div class='erro2'>Preencha todos os campos</div>
-                            </div>  
-                        </div>
-
-                        <div class='caixa'>
-                            <div class='dados'>Altura </div>
-                            <div class="resposta">
-                                <input type='number' id='altura'/>
-                                <div class='erro3'>Preencha todos os campos</div>
-                            </div>  
-                        </div>
-                        <button onclick='calcular()' id='calcular'>Calcular</button>
-                        <textarea id='resultado' disabled></textarea>
-                </div>
-            </div>
-        </div>
+          </div>
+        
     </div>
 </body>
 </html>

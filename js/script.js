@@ -55,5 +55,10 @@ function calcular() {
     if(altura != "" & peso != "" & nome != ""){
         resultado.value = "Olá " + nome + ", seu IMC é de " + imc.toFixed(2)+ ", logo você está com " + classificacao;
     }
-}
-;
+};
+$(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+});

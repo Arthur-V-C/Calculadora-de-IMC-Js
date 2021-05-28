@@ -267,6 +267,7 @@
         width: 100%;
         margin: 0;
         display: inline-flex;
+        margin-top: -5px;
         /* margin-left: -290px; */
         /* line-height: 60px */
     }
@@ -337,6 +338,10 @@
         font-size: 18px;
         box-sizing: border-box;
         padding: 10px 5px 5px 10px;
+    }
+    .erro1, .erro2, .erro3{
+        font-size: 10px !important;
+        width: 120% !important;
     }
 
 }
